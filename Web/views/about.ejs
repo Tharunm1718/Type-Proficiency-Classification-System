@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/about.css">
+</head>
+<body>
+  <div class="page">
+
+    <!-- Party popper canvas -->
+    <canvas id="confetti"></canvas>
+
+    <div class="result-card" data-level="<%= level %>">
+      <h2 class="title">Your Typing Archetype</h2>
+
+      <div class="card-3d">
+        <img id="levelImage" alt="Typing Level">
+      </div>
+
+      <h1 class="level-text"><%= level %></h1>
+    </div>
+
+  </div>
+
+  <script src="/about.js"></script>
+</body>
+</html>
