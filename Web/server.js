@@ -23,7 +23,7 @@ app.post("/", async (req, res) => {
         const typingData = req.body.userInput;
 
         const flaskResponse = await axios.post(
-            "http://127.0.0.1:8000/predict",
+            "https://type-proficiency-classification-sys.vercel.app/api/predict",
             {
                 typing_speed: typingData.typing_speed,
                 avg_key_delay: typingData.avg_key_delay,
