@@ -30,6 +30,3 @@ def predict():
     return jsonify({
         "typing_level": predicted_label
     })
-
-if __name__ == "__main__":
-    app.run(port=8000, debug=True)
