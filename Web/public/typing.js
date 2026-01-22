@@ -40,10 +40,6 @@ form.addEventListener("submit", (e) => {
     for (let i = 1; i < keyTimes.length; i++) {
         delays.push(keyTimes[i] - keyTimes[i - 1]);
     }
-     if(textarea.value.trim() !== displayedText){
-        alert("Please make sure your input matches the displayed text exactly.");
-        return;
-    }
     let avg_key_delay = delays.reduce((a, b) => a + b, 0) / delays.length / 1000;
     jsonData = {
         userInput: textarea.value,
@@ -75,4 +71,5 @@ form.addEventListener("submit", (e) => {
         alert("Something went wrong. Please try again.");
     });
 });
+
 
